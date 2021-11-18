@@ -1,18 +1,18 @@
-#Implementação de uma API REST
+# Implementação de uma API REST
 
 Trabalho da disciplina de Sistemas Distribuidos
 
-###Time de desenvolvimento:
+### Time de desenvolvimento:
 - Israel dos Santos Elias
 - Janaina Ferreira da Silva
 - Juliana Nascimento Silva
 
-###Tecnologias usadas:
+### Tecnologias usadas:
 - PHP
 - HTTP 1.1
 - JSON
 
-###Collection Postman 
+### Collection Postman 
 https://www.getpo2stman.com/collections/a757678dd1419f77dbe1
 
 ### Endpoints
