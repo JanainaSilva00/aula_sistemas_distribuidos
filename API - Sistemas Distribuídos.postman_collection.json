@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "1749c2dd-6ccf-43c1-bda3-357484830e60",
+		"name": "API - Sistemas Distribuídos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista Aluno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE URL}}/index.php/students/list",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"index.php",
+						"students",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Aluno",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE URL}}/index.php/students/student?cpf=11122233311",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"index.php",
+						"students",
+						"student"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "11122233311"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Aluno",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Nome do Usuário\",\n    \"curso\": \"Curso do Usuário\",\n    \"semestre\": 1,\n    \"ra\": 111111,\n    \"cpf\": 84573908056,\n    \"cidade\": \"Marília\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE URL}}/index.php/students/createStudent",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"index.php",
+						"students",
+						"createStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Aluno",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"José Cleyton\",\n    \"curso\": \"Ciencia da Computação\",\n    \"semestre\": 1,\n    \"ra\": 12345,\n    \"cpf\": 1234567897,\n    \"cidade\": \"Marília\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE URL}}/index.php/students/updateStudent",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"index.php",
+						"students",
+						"updateStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Aluno",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE URL}}/index.php/students/deleteStudent?cpf=123456787",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"index.php",
+						"students",
+						"deleteStudent"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "123456787"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE URL",
+			"value": "http://apirest.local"
+		}
+	]
+}
