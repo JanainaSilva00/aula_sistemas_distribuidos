@@ -13,7 +13,7 @@ Trabalho da disciplina de Sistemas Distribuidos
 - JSON
 
 ### Collection Postman 
-https://www.getpo2stman.com/collections/a757678dd1419f77dbe1
+https://github.com/JanainaSilva00/aula_sistemas_distribuidos/blob/master/API%20-%20Sistemas%20Distribu%C3%ADdos.postman_collection.json
 
 ### Endpoints
     
